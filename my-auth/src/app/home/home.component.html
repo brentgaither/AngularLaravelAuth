@@ -1,0 +1,14 @@
+<button
+  *ngIf="this.authenticated()"
+  mat-menu-item
+  aria-label="Logout"
+  (click)="logout()">
+  Log out
+</button>
+<button
+  *ngIf="!this.authenticated()"
+  mat-menu-item
+  aria-label="Login"
+  (click)="login()">
+  Sign in
+</button>
